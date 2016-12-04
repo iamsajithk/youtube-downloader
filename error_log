@@ -1,0 +1,13 @@
+[09-Jun-2016 20:14:56 UTC] PHP Notice:  Undefined offset: 1 in /home/aryabhatta/public_html/feofex.com/ytd/index.php on line 7
+[09-Jul-2016 17:20:40 UTC] PHP Notice:  Undefined offset: 1 in /home/aryabhatta/public_html/feofex.com/ytd/index.php on line 7
+[09-Jul-2016 17:20:47 UTC] PHP Notice:  Undefined offset: 1 in /home/aryabhatta/public_html/feofex.com/ytd/index.php on line 7
+[09-Jul-2016 17:20:49 UTC] PHP Notice:  Undefined offset: 1 in /home/aryabhatta/public_html/feofex.com/ytd/index.php on line 7
+[22-Sep-2016 15:55:46 UTC] PHP Notice:  Undefined variable: url_encoded_fmt_stream_map in /home/aryabhatta/public_html/ytd/index.php on line 11
+[22-Sep-2016 15:55:46 UTC] PHP Notice:  Undefined variable: title in /home/aryabhatta/public_html/ytd/index.php on line 94
+[22-Sep-2016 15:55:46 UTC] PHP Notice:  Undefined variable: type in /home/aryabhatta/public_html/ytd/index.php on line 99
+[22-Sep-2016 15:55:46 UTC] PHP Notice:  Undefined offset: 1 in /home/aryabhatta/public_html/ytd/index.php on line 101
+[22-Sep-2016 15:55:46 UTC] PHP Notice:  Undefined variable: url in /home/aryabhatta/public_html/ytd/index.php on line 117
+[22-Sep-2016 15:55:46 UTC] PHP Notice:  Undefined variable: title in /home/aryabhatta/public_html/ytd/index.php on line 117
+[22-Sep-2016 15:55:46 UTC] PHP Notice:  Undefined variable: title in /home/aryabhatta/public_html/ytd/index.php on line 119
+[22-Sep-2016 15:55:46 UTC] PHP Notice:  Undefined variable: quality in /home/aryabhatta/public_html/ytd/index.php on line 119
+[22-Sep-2016 15:55:46 UTC] PHP Notice:  Undefined variable: icon in /home/aryabhatta/public_html/ytd/index.php on line 120

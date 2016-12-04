@@ -1,0 +1,13 @@
+DirectoryIndex index.php
+Options -MultiViews
+
+RewriteEngine on
+
+# external redirect from actual URL to pretty one
+RewriteCond %{THE_REQUEST} /sbfg//home\.php\?page=([^\s&]*)[&\s] [NC]
+RewriteRule ^ /sbfg/%1? [R=302,L]
+
+# internal forward from pretty URL to actual one
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^/]+)/?$ /sbfg/home.php?page=$1 [L,QSA]
