@@ -3,12 +3,14 @@ $id = NULL;
 $full_url = NULL;
 if (isset($_POST['id']) and $_POST['id'] != "") {
     $full_url = $_POST['id'];
-    $values = explode("v=", $_POST['id']);
-    $id = $values[1];
+    $id=$newstring = substr($full_url, -11);
     if ($id != "") {
         $data = file_get_contents("https://www.youtube.com/get_video_info?video_id={$id}");
-        parse_str($data);
-        $arr = explode(",", $url_encoded_fmt_stream_map);
+        $query_params=[];
+        parse_str($data,$query_params);
+        $player_response=json_decode($query_params['player_response'],true);
+        $title=$player_response['videoDetails']['title'];
+        $arr = explode(",", $query_params['url_encoded_fmt_stream_map']);
     }
 }
 ?>
@@ -95,8 +97,11 @@ if (isset($_POST['id']) and $_POST['id'] != "") {
                 <div style='padding: 10px;display: inline-block;text-align: center'>
                     <?php
                     foreach ($arr as $item) {
-                        parse_str($item);
-                        $temp = explode(";", $type);
+                        $item_details=[];
+                        parse_str($item,$item_details);
+                        $temp = explode(";", $item_details['type']);
+                        $url = $item_details['url'];
+                        $quality = $item_details['quality'];
                         $extensions = explode("/", $temp[0]);
                         $extension = $extensions[1];
                         switch ($extension) {
